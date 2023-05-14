@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <>
-      <img src="../public/Logo.svg" alt="logo" />
+      <img src="Logo.svg" alt="logo" />
       <div>
         <ul>
           Naigation
