@@ -1,10 +1,12 @@
+import "./Footer.css";
+
 function Footer() {
   return (
-    <>
+    <footer>
       <img src="Logo.svg" alt="logo" />
       <div>
-        <ul>
-          Naigation
+        <ul className="footer-navigation">
+          Navigation
           <li>Home</li>
           <li>About</li>
           <li>Menu</li>
@@ -29,7 +31,7 @@ function Footer() {
           <li>Email</li>
         </ul>
       </div>
-    </>
+    </footer>
   );
 }
 

@@ -1,5 +1,13 @@
+import "./Header.css";
+import Nav from "./Nav";
+
 function Header() {
-  return <img src="/Logo.svg" alt="logo" />;
+  return (
+    <header>
+      <img src="/Logo.svg" alt="logo" />
+      <Nav />
+    </header>
+  );
 }
 
 export default Header;
