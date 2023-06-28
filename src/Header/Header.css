@@ -1,0 +1,18 @@
+header {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  margin-top: 8px;
+  align-items: center;
+  background-color: white;
+
+  width: 700px;
+  margin-bottom: 8px;
+
+  img {
+    margin-left: 16px;
+    margin-right: auto;
+    height: 30px;
+  }
+}
