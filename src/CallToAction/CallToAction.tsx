@@ -1,21 +1,32 @@
 import "./CallToAction.css";
 
-import { Button } from "../Button/Button";
+import { ReactNode } from "react";
 
-export function CallToAction() {
+export function CallToAction({
+  title,
+  location,
+  text,
+  children,
+  imgSrc,
+  imgAlt,
+}: {
+  title: string;
+  location: string;
+  text: string;
+  children: ReactNode;
+  imgSrc: string;
+  imgAlt: string;
+}) {
   return (
     <div className="jumbotron">
       <div className="jumbotron-text">
-        <h1>Little Lemon</h1>
-        <h2>Chicago</h2>
-        <p>
-          We are a family owned Mediterranean restaurant, focused on traditional
-          recipes served within a modern twist
-        </p>
-        <Button title="Reserve a table" />
+        <h1>{title}</h1>
+        <h2>{location}</h2>
+        <p>{text}</p>
+        {children}
       </div>
       <div className="jumbotron-image">
-        <img src="/restauranfood.jpg" alt="restaurantfood" />
+        <img src={imgSrc} alt={imgAlt} />
       </div>
     </div>
   );
