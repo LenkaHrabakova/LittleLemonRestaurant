@@ -1,10 +1,16 @@
-import { Button } from "../Button/Button";
+import { ReactNode } from "react";
 import "./Specials.css";
-export function Specials() {
+export function Specials({
+  title,
+  children,
+}: {
+  title: string;
+  children: ReactNode;
+}) {
   return (
     <div className="specials">
-      <h2>This week specials!</h2>
-      <Button title="Online menu" />
+      <h2>{title}</h2>
+      {children}
     </div>
   );
 }
