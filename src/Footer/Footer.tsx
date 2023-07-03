@@ -1,10 +1,15 @@
-import React from "react";
 import "./Footer.css";
 
-export function Footer() {
+export function Footer({
+  logoSrc,
+  logoAlt,
+}: {
+  logoSrc: string;
+  logoAlt: string;
+}) {
   return (
     <footer>
-      <img src="Logo.svg" alt="logo" />
+      <img src={logoSrc} alt={logoAlt} />
       <div>
         <ul className="footer-navigation">
           Navigation
