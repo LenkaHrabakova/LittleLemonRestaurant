@@ -21,7 +21,7 @@ export function App() {
         <Route path="/reservation" element={<BookingPage />} />
         <Route path="*" element={<h1>404</h1>} />
       </Routes>
-      <Footer />
+      <Footer logoSrc="Logo.svg" logoAlt="Logo" />
       {/* <Main /> */}
     </BrowserRouter>
   );
