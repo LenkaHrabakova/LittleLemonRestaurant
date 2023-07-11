@@ -3,9 +3,8 @@ import { CallToAction } from "../CallToAction/CallToAction";
 import { FoodCard, FoodCards } from "../FoodCard/FoodCard";
 import { Select } from "../Select/Select";
 import { Specials } from "../Specials/Specials";
-import { TextInput } from "../TextInput/TextInput";
 import { TimeInput } from "../TimeInput/TimeInput";
-import { DateInput } from "./DateInput/DateInput";
+import { DateInput } from "../DateInput/DateInput";
 
 export function Homepage() {
   return (
@@ -29,7 +28,6 @@ export function Homepage() {
 
       <DateInput label="Select day" id="dateInput" />
 
-      <TextInput label="Text" id="textInput" placeholder="name" />
       <FoodCards>
         <FoodCard
           imgSrc="/greeksalad.jpg"
