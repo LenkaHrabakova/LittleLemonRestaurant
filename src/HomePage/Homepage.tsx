@@ -1,10 +1,7 @@
 import { Button } from "../Button/Button";
 import { CallToAction } from "../CallToAction/CallToAction";
 import { FoodCard, FoodCards } from "../FoodCard/FoodCard";
-import { Select } from "../Select/Select";
 import { Specials } from "../Specials/Specials";
-import { TimeInput } from "../TimeInput/TimeInput";
-import { DateInput } from "../DateInput/DateInput";
 
 export function Homepage() {
   return (
@@ -22,11 +19,6 @@ export function Homepage() {
         title="This week specials!"
         children={<Button title="Online menu" />}
       />
-      <Select placeholder="Select time" label="Select time" id="time" />
-
-      <TimeInput label="Select time" id="timeInput" min="11:30" max="21:30" />
-
-      <DateInput label="Select day" id="dateInput" />
 
       <FoodCards>
         <FoodCard
