@@ -1,27 +1,34 @@
-export function DateInput({
+import { ChangeEventHandler } from "react";
+
+export function TimeInput({
   label,
   id,
+  value,
   min,
   max,
   isRequired,
-  defaultValue,
+  onChange,
 }: {
   label: string;
   id: string;
+  value: string;
   min?: string;
   max?: string;
   isRequired?: boolean;
-  defaultValue?: string;
+  onChange: ChangeEventHandler<HTMLInputElement>;
 }) {
   return (
     <>
       <label htmlFor={id}>{label}</label>
       <input
-        type="date"
+        type="time"
         className=""
-        value={defaultValue}
+        value={value}
         id={id}
+        min={min}
+        max={max}
         required={isRequired}
+        onChange={onChange}
       />
     </>
   );

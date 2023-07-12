@@ -1,19 +1,21 @@
 import { ChangeEventHandler } from "react";
 
-export function TextInput({
+export function DateInput({
   label,
   id,
-  isRequired,
-  placeholder,
   value,
+  min,
+  max,
+  isRequired,
   defaultValue,
   onChange,
 }: {
   label: string;
   id: string;
+  value: string;
+  min?: string;
+  max?: string;
   isRequired?: boolean;
-  placeholder?: string;
-  value?: string;
   defaultValue?: string;
   onChange: ChangeEventHandler<HTMLInputElement>;
 }) {
@@ -21,13 +23,14 @@ export function TextInput({
     <>
       <label htmlFor={id}>{label}</label>
       <input
-        type="text"
+        type="date"
         className=""
-        placeholder={placeholder}
-        id={id}
-        required={isRequired}
         value={value}
         defaultValue={defaultValue}
+        id={id}
+        required={isRequired}
+        min={min}
+        max={max}
         onChange={onChange}
       />
     </>
