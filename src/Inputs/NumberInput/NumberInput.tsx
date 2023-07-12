@@ -8,14 +8,13 @@ export function NumberInput({
   value,
   min,
   max,
-
   onChange,
 }: {
   label: string;
   id: string;
   isRequired?: boolean;
   placeholder?: string;
-  value?: string;
+  value: string;
   min?: number;
   max?: number;
 
