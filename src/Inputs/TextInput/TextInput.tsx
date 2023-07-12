@@ -6,7 +6,6 @@ export function TextInput({
   isRequired,
   placeholder,
   value,
-  defaultValue,
   onChange,
 }: {
   label: string;
@@ -14,7 +13,6 @@ export function TextInput({
   isRequired?: boolean;
   placeholder?: string;
   value: string;
-  defaultValue?: string;
   onChange: ChangeEventHandler<HTMLInputElement>;
 }) {
   return (
@@ -27,7 +25,6 @@ export function TextInput({
         id={id}
         required={isRequired}
         value={value}
-        defaultValue={defaultValue}
         onChange={onChange}
       />
     </>

@@ -8,7 +8,7 @@ export function NumberInput({
   value,
   min,
   max,
-  defaultValue,
+
   onChange,
 }: {
   label: string;
@@ -18,7 +18,7 @@ export function NumberInput({
   value?: string;
   min?: number;
   max?: number;
-  defaultValue?: number;
+
   onChange: ChangeEventHandler<HTMLInputElement>;
 }) {
   return (
@@ -33,7 +33,6 @@ export function NumberInput({
         value={value}
         min={min}
         max={max}
-        defaultValue={defaultValue}
         onChange={onChange}
       />
     </>

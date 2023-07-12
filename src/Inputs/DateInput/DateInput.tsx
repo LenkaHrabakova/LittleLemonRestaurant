@@ -7,7 +7,6 @@ export function DateInput({
   min,
   max,
   isRequired,
-  defaultValue,
   onChange,
 }: {
   label: string;
@@ -16,7 +15,6 @@ export function DateInput({
   min?: string;
   max?: string;
   isRequired?: boolean;
-  defaultValue?: string;
   onChange: ChangeEventHandler<HTMLInputElement>;
 }) {
   return (
@@ -26,7 +24,6 @@ export function DateInput({
         type="date"
         className=""
         value={value}
-        defaultValue={defaultValue}
         id={id}
         required={isRequired}
         min={min}
