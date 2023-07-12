@@ -1,0 +1,12 @@
+.booking-form {
+  margin-bottom: 8px;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.booking-form-fieldset {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  border: 2px solid #edefee;
+}
