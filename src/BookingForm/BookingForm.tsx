@@ -4,13 +4,22 @@ import { TextInput } from "../Inputs/TextInput/TextInput";
 import { DateInput } from "../Inputs/DateInput/DateInput";
 import { NumberInput } from "../Inputs/NumberInput/NumberInput";
 import { Select } from "../Inputs/Select/Select";
+import { AvailableTime } from "../AvailableTime";
+import { UpdateAvailableTimes } from "../updateTimes";
 
-export function BookingForm() {
+export function BookingForm({
+  availableTimes,
+  updateAvailableTimes,
+}: {
+  availableTimes: AvailableTime[];
+  updateAvailableTimes: UpdateAvailableTimes;
+}) {
   const [name, setName] = useState("");
   const [guests, setGuests] = useState("");
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
   const [occasion, setOccasion] = useState("");
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setName("");
@@ -34,22 +43,21 @@ export function BookingForm() {
             label="Select date"
             id="day"
             value={date}
-            min="2023-07-12"
-            onChange={(e) => setDate(e.target.value)}
+            min={new Date().toISOString().substring(0, 10)}
+            onChange={(e) => {
+              setDate(e.target.value);
+              updateAvailableTimes({
+                type: "date-changed",
+                value: e.target.value,
+              });
+            }}
           />
 
           <Select
             label="Select time"
             id="time"
             value={time}
-            selectOptions={[
-              { name: "17:00", value: "17:00" },
-              { name: "18:00", value: "18:00" },
-              { name: "19:00", value: "19:00" },
-              { name: "20:00", value: "20:00" },
-              { name: "21:00", value: "21:00" },
-              { name: "22:00", value: "22:00" },
-            ]}
+            selectOptions={availableTimes}
             onChange={(e) => setTime(e.target.value)}
           />
           <NumberInput

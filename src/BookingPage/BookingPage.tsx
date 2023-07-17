@@ -1,12 +1,23 @@
 import "./BookingPage.css";
 
 import { BookingForm } from "../BookingForm/BookingForm";
+import { AvailableTime } from "../AvailableTime";
+import { UpdateAvailableTimes } from "../updateTimes";
 
-export function BookingPage() {
+export function BookingPage({
+  availableTimes,
+  updateAvailableTimes,
+}: {
+  availableTimes: AvailableTime[];
+  updateAvailableTimes: UpdateAvailableTimes;
+}) {
   return (
     <>
       <h1>Booking a table</h1>
-      <BookingForm />
+      <BookingForm
+        availableTimes={availableTimes}
+        updateAvailableTimes={updateAvailableTimes}
+      />
     </>
   );
 }
