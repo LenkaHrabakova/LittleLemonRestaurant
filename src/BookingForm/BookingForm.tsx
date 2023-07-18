@@ -16,7 +16,7 @@ export function BookingForm({
   updateAvailableTimes: UpdateAvailableTimes;
 }) {
   const [name, setName] = useState("");
-  const [tel, setTel] = useState("");
+  const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [guests, setGuests] = useState("");
   const [date, setDate] = useState("");
@@ -27,7 +27,7 @@ export function BookingForm({
     e.preventDefault();
     setName("");
     setEmail("");
-    setTel("");
+    setPhone("");
     setGuests("");
     setDate("");
     setTime("");
@@ -86,11 +86,11 @@ export function BookingForm({
             type="text"
           />
           <TextInput
-            id="tel"
+            id="phone"
             placeholder="Your phone number"
             label="Please, fill in your phone number"
-            value={tel}
-            onChange={(e) => setTel(e.target.value)}
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
             type="tel"
           />
           <TextInput
@@ -101,7 +101,11 @@ export function BookingForm({
             onChange={(e) => setEmail(e.target.value)}
             type="email"
           />
-          <Button title="Make Your reservation" type="submit" />
+          <Button
+            title="Reserve"
+            type="submit"
+            disabled={!date || !time || !guests || !name || !phone || !email}
+          />
         </fieldset>
       </form>
     </>
