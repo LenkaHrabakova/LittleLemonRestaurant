@@ -16,6 +16,8 @@ export function BookingForm({
   updateAvailableTimes: UpdateAvailableTimes;
 }) {
   const [name, setName] = useState("");
+  const [tel, setTel] = useState("");
+  const [email, setEmail] = useState("");
   const [guests, setGuests] = useState("");
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
@@ -24,6 +26,8 @@ export function BookingForm({
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setName("");
+    setEmail("");
+    setTel("");
     setGuests("");
     setDate("");
     setTime("");
@@ -33,15 +37,8 @@ export function BookingForm({
     <>
       <form className="booking-form" onSubmit={handleSubmit}>
         <fieldset className="booking-form-fieldset">
-          <TextInput
-            id="name"
-            placeholder="name"
-            label="Name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
           <DateInput
-            label="Select date"
+            label="Select date for your reservation"
             id="day"
             value={date}
             min={new Date().toISOString().substring(0, 10)}
@@ -55,14 +52,14 @@ export function BookingForm({
           />
 
           <Select
-            label="Select time"
+            label="Select time for your reservation"
             id="time"
             value={time}
             selectOptions={availableTimes}
             onChange={(e) => setTime(e.target.value)}
           />
           <NumberInput
-            label="Number of guests"
+            label="Please, fill in number of guests"
             id="guests"
             placeholder="1"
             value={guests}
@@ -71,7 +68,7 @@ export function BookingForm({
             onChange={(e) => setGuests(e.target.value)}
           />
           <Select
-            label="Occasion"
+            label="Please, select occasion"
             id="occasion"
             value={occasion}
             selectOptions={[
@@ -79,6 +76,30 @@ export function BookingForm({
               { name: "Anniversary", value: "anniversary" },
             ]}
             onChange={(e) => setOccasion(e.target.value)}
+          />
+          <TextInput
+            id="name"
+            placeholder="Your name"
+            label="Please, fill in your name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            type="text"
+          />
+          <TextInput
+            id="tel"
+            placeholder="Your phone number"
+            label="Please, fill in your phone number"
+            value={tel}
+            onChange={(e) => setTel(e.target.value)}
+            type="tel"
+          />
+          <TextInput
+            id="email"
+            placeholder="Your email"
+            label="Please, fill in your email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            type="email"
           />
           <Button title="Make Your reservation" type="submit" />
         </fieldset>
