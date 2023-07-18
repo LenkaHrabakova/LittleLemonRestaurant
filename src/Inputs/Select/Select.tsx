@@ -1,4 +1,5 @@
 import { ChangeEventHandler } from "react";
+import "../InputStyles.css";
 
 export function Select({
   label,
@@ -16,7 +17,7 @@ export function Select({
   onChange: ChangeEventHandler<HTMLSelectElement>;
 }) {
   return (
-    <>
+    <div className="input">
       <label htmlFor={id}>{label}</label>
       <select
         className=""
@@ -32,6 +33,6 @@ export function Select({
           </option>
         ))}
       </select>
-    </>
+    </div>
   );
 }

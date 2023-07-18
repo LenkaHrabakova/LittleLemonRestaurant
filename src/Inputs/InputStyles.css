@@ -1,4 +1,4 @@
-.text-input {
+.input {
   display: flex;
   flex-direction: column;
   margin-bottom: 8px;
@@ -12,11 +12,21 @@
     padding: 4px 12px;
     border: 2px solid #dddddd;
   }
-  & input::placeholder {
+
+  & select {
+    height: 40px;
+    border-radius: 8px;
+    padding: 4px 12px;
+    border: 2px solid #dddddd;
+  }
+
+  & input::placeholder,
+  & select::placeholder {
     font-size: 16px;
   }
 
-  & input:focus-visible {
+  & input:focus-visible,
+  & select:focus-visible {
     border: 2px solid #f4ce14;
     outline: none;
     box-shadow: 1px 1px #f4ce14;

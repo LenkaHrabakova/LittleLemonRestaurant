@@ -1,4 +1,5 @@
 import { ChangeEventHandler } from "react";
+import "../InputStyles.css";
 
 export function DateInput({
   label,
@@ -18,7 +19,7 @@ export function DateInput({
   onChange: ChangeEventHandler<HTMLInputElement>;
 }) {
   return (
-    <>
+    <div className="input">
       <label htmlFor={id}>{label}</label>
       <input
         type="date"
@@ -30,6 +31,6 @@ export function DateInput({
         max={max}
         onChange={onChange}
       />
-    </>
+    </div>
   );
 }

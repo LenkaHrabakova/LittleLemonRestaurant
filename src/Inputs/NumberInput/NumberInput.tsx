@@ -1,4 +1,5 @@
 import { ChangeEventHandler } from "react";
+import "../InputStyles.css";
 
 export function NumberInput({
   label,
@@ -21,7 +22,7 @@ export function NumberInput({
   onChange: ChangeEventHandler<HTMLInputElement>;
 }) {
   return (
-    <>
+    <div className="input">
       <label htmlFor={id}>{label}</label>
       <input
         type="number"
@@ -34,6 +35,6 @@ export function NumberInput({
         max={max}
         onChange={onChange}
       />
-    </>
+    </div>
   );
 }

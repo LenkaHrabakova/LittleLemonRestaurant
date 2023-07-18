@@ -1,5 +1,5 @@
 import { ChangeEventHandler } from "react";
-import "./TextInput.css";
+import "../InputStyles.css";
 
 export type TextInputType = "text" | "email" | "tel";
 
@@ -21,7 +21,7 @@ export function TextInput({
   type: TextInputType;
 }) {
   return (
-    <div className="text-input">
+    <div className="input">
       <label htmlFor={id}>{label}</label>
       <input
         type={type}
