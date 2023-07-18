@@ -81,9 +81,6 @@ export function BookingForm({
             onChange={(e) => setOccasion(e.target.value)}
           />
           <Button title="Make Your reservation" type="submit" />
-          <button type="submit" disabled={!name || !guests}>
-            Make Your reservation
-          </button>
         </fieldset>
       </form>
     </>
