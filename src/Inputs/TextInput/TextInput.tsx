@@ -1,4 +1,7 @@
 import { ChangeEventHandler } from "react";
+import "./TextInput.css";
+
+export type TextInputType = "text" | "email" | "tel";
 
 export function TextInput({
   label,
@@ -7,6 +10,7 @@ export function TextInput({
   placeholder,
   value,
   onChange,
+  type,
 }: {
   label: string;
   id: string;
@@ -14,12 +18,13 @@ export function TextInput({
   placeholder?: string;
   value: string;
   onChange: ChangeEventHandler<HTMLInputElement>;
+  type: TextInputType;
 }) {
   return (
-    <>
+    <div className="text-input">
       <label htmlFor={id}>{label}</label>
       <input
-        type="text"
+        type={type}
         className=""
         placeholder={placeholder}
         id={id}
@@ -27,6 +32,6 @@ export function TextInput({
         value={value}
         onChange={onChange}
       />
-    </>
+    </div>
   );
 }
