@@ -11,13 +11,13 @@ export function Homepage() {
         location="Chicago"
         text="We are a family owned Mediterranean restaurant, focused on traditional
         recipes served within a modern twist."
-        children={<Button title="Reserve a table" />}
+        children={<Button title="Reserve a table" type="submit" />}
         imgSrc="/restauranfood.jpg"
         imgAlt="restaurantfood"
       />
       <Specials
         title="This week specials!"
-        children={<Button title="Online menu" />}
+        children={<Button title="Online menu" type="submit" />}
       />
 
       <FoodCards>

@@ -6,6 +6,7 @@ import { NumberInput } from "../Inputs/NumberInput/NumberInput";
 import { Select } from "../Inputs/Select/Select";
 import { AvailableTime } from "../AvailableTime";
 import { UpdateAvailableTimes } from "../updateTimes";
+import { Button } from "../Button/Button";
 
 export function BookingForm({
   availableTimes,
@@ -79,10 +80,9 @@ export function BookingForm({
             ]}
             onChange={(e) => setOccasion(e.target.value)}
           />
-
-          <input type="submit" value="Make Your reservation" />
+          <Button title="Make Your reservation" type="submit" />
           <button type="submit" disabled={!name || !guests}>
-            Submit
+            Make Your reservation
           </button>
         </fieldset>
       </form>

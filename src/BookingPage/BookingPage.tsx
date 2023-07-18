@@ -13,7 +13,7 @@ export function BookingPage({
 }) {
   return (
     <>
-      <h1>Booking a table</h1>
+      <h1>Booking Form</h1>
       <BookingForm
         availableTimes={availableTimes}
         updateAvailableTimes={updateAvailableTimes}
