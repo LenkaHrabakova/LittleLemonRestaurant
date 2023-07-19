@@ -1,7 +1,6 @@
-import React from "react";
 import "./Nav.css";
 
-function Nav() {
+export function Nav() {
   return (
     <nav className="navigation">
       <ul className="navigation-list">
@@ -27,5 +26,3 @@ function Nav() {
     </nav>
   );
 }
-
-export default Nav;

@@ -14,4 +14,3 @@ export function Specials({
     </div>
   );
 }
-export default Specials;

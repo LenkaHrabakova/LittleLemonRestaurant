@@ -8,7 +8,7 @@ import { Footer } from "./Footer/Footer";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import { Homepage } from "./HomePage/Homepage";
 
-import Header from "./Header/Header";
+import { Header } from "./Header/Header";
 import { initializeTimes, updateTimes } from "./updateTimes";
 
 export function App() {
@@ -35,7 +35,6 @@ export function App() {
         <Route path="*" element={<h1>404</h1>} />
       </Routes>
       <Footer logoSrc="Logo.svg" logoAlt="Logo" />
-      {/* <Main /> */}
     </BrowserRouter>
   );
 }
