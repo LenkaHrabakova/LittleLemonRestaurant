@@ -3,10 +3,17 @@ footer {
   margin-bottom: 0;
   margin-top: auto;
   background-color: #495e57;
-  > img {
-    height: 60px;
+  justify-content: center;
+
+  & .footer-logo {
+    width: 30px;
+    margin-bottom: auto;
+    margin-top: auto;
     margin-left: 30px;
-    margin-top: 30px;
+  }
+
+  & .footer-info {
+    display: flex;
   }
 }
 

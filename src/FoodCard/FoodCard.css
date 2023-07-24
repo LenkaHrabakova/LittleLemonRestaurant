@@ -1,6 +1,6 @@
 .foodcards {
   width: 700px;
-  background-color: aqua;
+  /* background-color: aqua; */
   display: flex;
   margin: 0 auto 8px auto;
   padding: 8px;

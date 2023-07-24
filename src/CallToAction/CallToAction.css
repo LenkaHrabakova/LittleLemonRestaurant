@@ -9,7 +9,7 @@
   .jumbotron-text {
     margin-left: 150px;
     margin-right: auto;
-    width: 30%;
+    width: 35%;
     > p {
       color: white;
       font-family: "Karla regular";
@@ -17,7 +17,7 @@
     }
   }
   .jumbotron-image {
-    width: 30%;
+    width: 35%;
     & img {
       width: 250px;
       height: 350px;

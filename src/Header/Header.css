@@ -16,3 +16,9 @@ header {
     height: 30px;
   }
 }
+/* small screens - up to 767px */
+@media only screen and (max-width: 767px) {
+  header {
+    display: none;
+  }
+}

@@ -11,3 +11,10 @@
   border: 2px solid #edefee;
   margin-bottom: 8px;
 }
+
+/* small screens - up to 767px */
+@media only screen and (max-width: 767px) {
+  .booking-form {
+    width: 100%;
+  }
+}
