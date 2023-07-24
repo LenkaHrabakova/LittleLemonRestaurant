@@ -3,34 +3,30 @@ import "./Footer.css";
 export function Footer({
   logoSrc,
   logoAlt,
+  address,
+  phone,
+  email,
 }: {
   logoSrc: string;
   logoAlt: string;
+  address: string;
+  phone: string;
+  email: string;
 }) {
   return (
     <footer>
-      <img src={logoSrc} alt={logoAlt} />
-      <div>
+      <div className="footer-logo">
+        <img src={logoSrc} alt={logoAlt} />
+      </div>
+      <div className="footer-info">
         <ul className="footer-navigation">
-          Navigation
-          <li>Home</li>
-          <li>About</li>
-          <li>Menu</li>
-          <li>Reservation</li>
-          <li>Order online</li>
-          <li>Login</li>
-        </ul>
-      </div>
-      <div>
-        <ul>
           Contact
-          <li>Address</li>
-          <li>Phone number</li>
-          <li>Email</li>
+          <li>{address}</li>
+          <li>{phone}</li>
+          <li>{email}</li>
         </ul>
-      </div>
-      <div>
-        <ul>
+
+        <ul className="footer-navigation">
           Social media links
           <li>Address</li>
           <li>Phone number</li>

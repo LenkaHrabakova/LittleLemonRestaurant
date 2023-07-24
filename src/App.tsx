@@ -34,7 +34,13 @@ export function App() {
         />
         <Route path="*" element={<h1>404</h1>} />
       </Routes>
-      <Footer logoSrc="Logo.svg" logoAlt="Logo" />
+      <Footer
+        logoSrc="Logo.svg"
+        logoAlt="Logo"
+        address="1001 E 43rd St, Chicago, IL 60653"
+        phone="(555) 555-1234"
+        email="info@littlelemon.com"
+      />
     </BrowserRouter>
   );
 }
