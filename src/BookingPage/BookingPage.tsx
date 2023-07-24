@@ -3,6 +3,7 @@ import "./BookingPage.css";
 import { BookingForm } from "../BookingForm/BookingForm";
 import { AvailableTime } from "../AvailableTime";
 import { UpdateAvailableTimes } from "../updateTimes";
+import { Main } from "../Main/Main";
 
 export function BookingPage({
   availableTimes,
@@ -12,12 +13,12 @@ export function BookingPage({
   updateAvailableTimes: UpdateAvailableTimes;
 }) {
   return (
-    <>
+    <Main>
       <h1>Booking Form</h1>
       <BookingForm
         availableTimes={availableTimes}
         updateAvailableTimes={updateAvailableTimes}
       />
-    </>
+    </Main>
   );
 }

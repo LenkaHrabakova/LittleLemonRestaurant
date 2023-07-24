@@ -1,11 +1,12 @@
 import { Button } from "../Button/Button";
 import { CallToAction } from "../CallToAction/CallToAction";
 import { FoodCard, FoodCards } from "../FoodCard/FoodCard";
+import { Main } from "../Main/Main";
 import { Specials } from "../Specials/Specials";
 
 export function Homepage() {
   return (
-    <>
+    <Main>
       <CallToAction
         title="Little Lemon"
         location="Chicago"
@@ -46,6 +47,6 @@ export function Homepage() {
           link="#/"
         />
       </FoodCards>
-    </>
+    </Main>
   );
 }
