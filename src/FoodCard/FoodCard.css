@@ -1,6 +1,5 @@
 .foodcards {
   width: 700px;
-  /* background-color: aqua; */
   display: flex;
   margin: 0 auto 8px auto;
   padding: 8px;
@@ -68,5 +67,20 @@
     height: 24px;
     width: 24px;
     margin-left: 8px;
+  }
+}
+
+/* small screens - up to 767px */
+@media only screen and (max-width: 767px) {
+  .foodcards {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow: scroll;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .foodcard {
   }
 }

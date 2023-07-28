@@ -9,7 +9,7 @@ export function Specials({
 }) {
   return (
     <div className="specials">
-      <h2>{title}</h2>
+      <h2 className="specials-title">{title}</h2>
       {children}
     </div>
   );

@@ -19,14 +19,15 @@ export function CallToAction({
 }) {
   return (
     <div className="jumbotron">
-      <div className="jumbotron-text">
-        <h1>{title}</h1>
-        <h2>{location}</h2>
-        <p>{text}</p>
-        {children}
-      </div>
-      <div className="jumbotron-image">
-        <img src={imgSrc} alt={imgAlt} />
+      <h1>{title}</h1>
+      <h2>{location}</h2>
+      <div className="jumbotron-info">
+        <div className="jumbotron-text">
+          <p>{text}</p>
+          {children}
+        </div>
+
+        <img className="jumbotron-image" src={imgSrc} alt={imgAlt} />
       </div>
     </div>
   );

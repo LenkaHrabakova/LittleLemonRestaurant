@@ -1,44 +1,90 @@
 .jumbotron {
   display: flex;
-  max-width: 1150px;
+  flex-direction: column;
   background-color: #495e57;
-  margin-left: 0;
-  margin-right: 0;
   margin-bottom: 8px;
-
-  .jumbotron-text {
-    margin-left: 150px;
-    margin-right: auto;
-    width: 35%;
-    > p {
-      color: white;
-      font-family: "Karla regular";
-      width: 75%;
-    }
-  }
-  .jumbotron-image {
-    width: 35%;
-    & img {
-      width: 250px;
-      height: 350px;
-      border-radius: 16px;
-      position: relative;
-      top: 48px;
-      right: 100px;
-    }
-  }
+  height: 300px;
 }
+
 h1 {
   font-family: "Markazi Text Medium";
   color: #f4ce14;
   font-size: 40pt;
   font-weight: regular;
   margin-bottom: 0;
-  margin-top: 48px;
+
+  margin-left: 128px;
 }
+
 h2 {
   color: white;
   font-family: "Markazi";
   font-size: 18pt;
   margin-top: 0;
+  margin-left: 128px;
+  margin-bottom: 0;
+}
+
+.jumbotron-info {
+  display: flex;
+  flex-direction: row;
+  height: 176px;
+}
+
+.jumbotron-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 136px;
+  margin-left: 128px;
+  width: 35%;
+  color: white;
+  font-family: "Karla regular";
+}
+
+.jumbotron-image {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+  transform: translate(-36px, -92px);
+}
+
+/* small screens - up to 767px */
+@media only screen and (max-width: 767px) {
+  .jumbotron {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  h1,
+  h2 {
+    margin-top: 0;
+    text-align: left;
+    margin-left: 8px;
+    margin-bottom: 0;
+  }
+
+  .jumbotron-info {
+    margin: 8px;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+
+  .jumbotron-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 0;
+    margin-right: 20px;
+    width: 60%;
+  }
+
+  .jumbotron-image {
+    width: 120px;
+    height: 150px;
+    transform: translateX(0);
+    transform: translateY(0);
+  }
 }
