@@ -101,12 +101,12 @@ export function BookingForm({
             onChange={(e) => setEmail(e.target.value)}
             type="email"
           />
-          <Button
-            title="Reserve"
-            type="submit"
-            disabled={!date || !time || !guests || !name || !phone || !email}
-          />
         </fieldset>
+        <Button
+          title="Reserve"
+          type="submit"
+          disabled={!date || !time || !guests || !name || !phone || !email}
+        />
       </form>
     </>
   );

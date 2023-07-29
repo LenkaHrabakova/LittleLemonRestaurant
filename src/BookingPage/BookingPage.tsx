@@ -14,7 +14,7 @@ export function BookingPage({
 }) {
   return (
     <Main>
-      <h1>Booking Form</h1>
+      <h1 className="booking-page-title">Booking Form</h1>
       <BookingForm
         availableTimes={availableTimes}
         updateAvailableTimes={updateAvailableTimes}
