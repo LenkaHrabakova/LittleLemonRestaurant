@@ -31,7 +31,7 @@ export function Homepage() {
           link="#/"
         />
         <FoodCard
-          imgSrc="/bruchetta.svg"
+          imgSrc="/bruchetta.png"
           altSrc="Bruchetta"
           name="Bruchetta"
           price={5.99}
