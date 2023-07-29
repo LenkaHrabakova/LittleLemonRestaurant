@@ -12,6 +12,11 @@
   margin-bottom: 8px;
 }
 
+.booking-form-button {
+  margin-right: 0;
+  margin-left: auto;
+}
+
 /* small screens - up to 767px */
 @media only screen and (max-width: 767px) {
   .booking-form {

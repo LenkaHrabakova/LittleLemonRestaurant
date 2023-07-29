@@ -50,7 +50,6 @@ export function BookingForm({
               });
             }}
           />
-
           <Select
             label="Select time for your reservation"
             id="time"
@@ -101,12 +100,13 @@ export function BookingForm({
             onChange={(e) => setEmail(e.target.value)}
             type="email"
           />
+          <Button
+            className="booking-form-button"
+            title="Reserve"
+            type="submit"
+            disabled={!date || !time || !guests || !name || !phone || !email}
+          />
         </fieldset>
-        <Button
-          title="Reserve"
-          type="submit"
-          disabled={!date || !time || !guests || !name || !phone || !email}
-        />
       </form>
     </>
   );
