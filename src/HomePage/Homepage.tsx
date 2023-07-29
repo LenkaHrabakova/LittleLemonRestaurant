@@ -42,7 +42,7 @@ export function Homepage() {
           imgSrc="/lemondessert.jpg"
           altSrc="Lemon Dessert"
           name="Lemon Dessert"
-          price={5.0}
+          price={5.49}
           description="This comes straight from grandma's recipe book, every last ingredient has been sourced and is as authentic as can be imagined."
           link="#/"
         />

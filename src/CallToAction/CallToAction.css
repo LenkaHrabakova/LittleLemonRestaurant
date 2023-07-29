@@ -47,7 +47,7 @@ h2 {
   height: 300px;
   object-fit: cover;
   border-radius: 16px;
-  transform: translate(-36px, -92px);
+  transform: translate(-30px, -92px);
 }
 
 /* small screens - up to 767px */

@@ -26,7 +26,7 @@ export function FoodCard({
 
       <div className="food-info-row">
         <div className="food-name">{name}</div>
-        <div className="food-price">{price}</div>
+        <div className="food-price">${price}</div>
       </div>
 
       <p className="food-description">{description}</p>

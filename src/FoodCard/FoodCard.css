@@ -7,7 +7,7 @@
 }
 
 .foodcard {
-  flex: 1 1 0px;
+  flex: 1 1 200px;
 
   background-color: #edefee;
   border-radius: 16px 16px 0 0;
@@ -39,7 +39,7 @@
 
 .food-price {
   font-size: 18px;
-  color: #ee9972;
+  color: #495e57;
   margin-right: 8px;
   margin-left: auto;
 }
