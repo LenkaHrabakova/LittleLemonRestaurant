@@ -6,13 +6,15 @@ export function Button({
   title,
   disabled,
   type,
+  className,
 }: {
   title: string;
   disabled?: boolean;
   type: ButtonType;
+  className?: string;
 }) {
   return (
-    <button disabled={disabled} type={type}>
+    <button disabled={disabled} type={type} className={className}>
       {title}
     </button>
   );
