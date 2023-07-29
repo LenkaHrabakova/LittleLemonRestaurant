@@ -1,7 +1,5 @@
 .navigation {
-  margin-right: 24px;
-
-  width: 100%;
+  margin-right: 8px;
 }
 
 .navigation-list {
@@ -9,15 +7,16 @@
   text-decoration: none;
   color: black;
   justify-content: space-around;
+  margin-left: auto;
+  margin-right: 8px;
+}
 
-  & > li {
-    list-style-type: none;
-
-    & > a {
-      text-decoration: none;
-      color: black;
-      margin-left: 16px;
-      margin-right: auto;
-    }
+.navigation-item {
+  list-style-type: none;
+  & a {
+    text-decoration: none;
+    color: black;
+    margin-left: 24px;
+    margin-right: auto;
   }
 }
