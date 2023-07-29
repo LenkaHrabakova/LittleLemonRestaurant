@@ -7,18 +7,14 @@
 }
 
 h1 {
-  font-family: "Markazi Text Medium";
   color: #f4ce14;
   font-size: 40pt;
-  font-weight: regular;
   margin-bottom: 0;
-
   margin-left: 128px;
 }
 
 h2 {
   color: white;
-  font-family: "Markazi";
   font-size: 18pt;
   margin-top: 0;
   margin-left: 128px;
@@ -39,7 +35,6 @@ h2 {
   margin-left: 128px;
   width: 35%;
   color: white;
-  font-family: "Karla regular";
 }
 
 .jumbotron-image {
