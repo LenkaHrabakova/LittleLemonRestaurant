@@ -30,9 +30,9 @@
   flex-direction: row;
   margin-top: 16px;
 }
+
 .food-name {
   font-size: 18px;
-
   margin-right: auto;
   margin-left: 8px;
 }
@@ -47,7 +47,6 @@
 .food-description {
   margin-right: 8px;
   margin-left: 8px;
-
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -62,12 +61,12 @@
   color: black;
   font-size: 18px;
   display: flex;
+}
 
-  > img {
-    height: 24px;
-    width: 24px;
-    margin-left: 8px;
-  }
+.food-delivery img {
+  height: 24px;
+  width: 24px;
+  margin-left: 8px;
 }
 
 /* small screens - up to 767px */

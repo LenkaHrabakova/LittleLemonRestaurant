@@ -6,11 +6,11 @@ footer {
 
 .footer-logo {
   margin: auto 32px;
+}
 
-  & img {
-    aspect-ratio: 2/3;
-    width: 40px;
-  }
+.footer-logo img {
+  aspect-ratio: 2/3;
+  width: 40px;
 }
 
 .footer-info {
@@ -39,13 +39,13 @@ footer {
   align-items: center;
   flex-grow: 0;
   margin-right: 16px;
+}
 
-  & img {
-    width: 32px;
-    height: 32px;
-    margin-right: 4px;
-    margin-left: 4px;
-  }
+.footer-social img {
+  width: 32px;
+  height: 32px;
+  margin-right: 4px;
+  margin-left: 4px;
 }
 
 /* small screens - up to 767px */
@@ -64,5 +64,10 @@ footer {
       width: 28px;
       height: 28px;
     }
+  }
+
+  .footer-social img {
+    width: 28px;
+    height: 28px;
   }
 }

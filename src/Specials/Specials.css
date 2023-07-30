@@ -5,12 +5,13 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 8px;
-
-  & button {
-    margin-left: auto;
-    margin-right: 138px;
-  }
 }
+
+.specials button {
+  margin-left: auto;
+  margin-right: 138px;
+}
+
 .specials-title {
   color: black;
   margin-bottom: 0;
@@ -20,10 +21,9 @@
 @media only screen and (max-width: 767px) {
   .specials {
     width: 100%;
+  }
 
-    margin-top: 0;
-    > button {
-      margin-right: 0;
-    }
+  .specials button {
+    margin-right: 0;
   }
 }
