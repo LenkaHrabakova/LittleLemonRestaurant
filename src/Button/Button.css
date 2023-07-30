@@ -9,6 +9,12 @@ button {
   cursor: pointer;
 }
 
+.button-icon {
+  margin-left: 0;
+  height: 24px;
+  width: 24px;
+}
+
 button:hover {
   background-color: #e3be0b;
 }
