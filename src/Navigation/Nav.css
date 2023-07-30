@@ -1,4 +1,5 @@
 .navigation {
+  display: flex;
   margin-right: 8px;
 }
 
@@ -20,4 +21,36 @@
   color: black;
   margin-left: 24px;
   margin-right: auto;
+}
+
+.navigation-toggle {
+  display: none;
+}
+
+/* small screens - up to 767px */
+@media only screen and (max-width: 767px) {
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .navigation-toggle {
+    display: inline-block;
+  }
+
+  .navigation.navigation-closed {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .navigation-closed .navigation-list {
+    display: none;
+  }
+
+  .navigation-list {
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }

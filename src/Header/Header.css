@@ -11,10 +11,3 @@ header img {
   margin-right: auto;
   height: 50px;
 }
-
-/* small screens - up to 767px */
-@media only screen and (max-width: 767px) {
-  header {
-    display: none;
-  }
-}
