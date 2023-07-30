@@ -10,7 +10,7 @@
   flex: 1 0 200px;
 
   background-color: #edefee;
-  border-radius: 16px 16px 0 0;
+  border-radius: 16px;
   display: flex;
   flex-direction: column;
   margin-left: 8px;
@@ -52,15 +52,22 @@
 }
 
 .food-delivery {
+  display: flex;
+  align-items: center;
   margin-top: auto;
-  padding-top: 16px;
-  margin-bottom: 16px;
-  margin-left: 8px;
-  margin-right: 8px;
+  padding: 4px 8px;
+  margin-bottom: 8px;
+  margin-left: auto;
+  margin-right: auto;
   text-decoration: none;
   color: black;
   font-size: 18px;
-  display: flex;
+  border-radius: 8px;
+  color: #495e57;
+}
+
+.food-delivery:hover {
+  background-color: #f4ce14;
 }
 
 .food-delivery img {

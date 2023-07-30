@@ -15,15 +15,25 @@
 .specials-title {
   color: black;
   margin-bottom: 0;
+  margin-left: 140px;
 }
 
 /* small screens - up to 767px */
 @media only screen and (max-width: 767px) {
   .specials {
     width: 100%;
+    margin-top: 32px;
   }
 
   .specials button {
     margin-right: 0;
+    white-space: nowrap;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .specials-title {
+    margin-left: 8px;
+    margin-top: 0;
   }
 }

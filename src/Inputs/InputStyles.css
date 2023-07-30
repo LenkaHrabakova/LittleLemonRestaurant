@@ -1,40 +1,41 @@
 .input {
   display: flex;
   flex-direction: column;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   flex-grow: 1;
+}
 
-  & label {
-    margin-bottom: 8px;
-  }
-  & input {
-    height: 32px;
-    border-radius: 8px;
+.input label {
+  margin-bottom: 4px;
+}
 
-    border: 1px solid #dddddd;
-    padding: 8px 16px;
-    vertical-align: top;
-    appearance: none;
-    font-size: 16px;
-    line-height: 24px;
-  }
+input {
+  height: 40px;
+  border-radius: 8px;
 
-  & select {
-    height: 40px;
-    border-radius: 8px;
+  border: 1px solid #dddddd;
+  padding: 8px 16px;
+  vertical-align: top;
+  appearance: none;
+  font-size: 16px;
+  line-height: 24px;
+}
 
-    border: 1px solid #dddddd;
-    padding: 8px 16px;
-    vertical-align: top;
-    appearance: none;
-    font-size: 16px;
-    line-height: 24px;
-  }
+select {
+  height: 40px;
+  border-radius: 8px;
 
-  & input:focus-visible,
-  & select:focus-visible {
-    border: 2px solid #f4ce14;
-    outline: none;
-    /* box-shadow: 1px 0px #f4ce14; */
-  }
+  border: 1px solid #dddddd;
+  padding: 8px 16px;
+  vertical-align: top;
+  appearance: none;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+input:focus-visible,
+select:focus-visible {
+  border: 2px solid #f4ce14;
+  outline: none;
+  /* box-shadow: 1px 0px #f4ce14; */
 }

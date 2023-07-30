@@ -32,7 +32,7 @@ export function FoodCard({
       <p className="food-description">{description}</p>
       <a className="food-delivery" href={link}>
         Order a delivery
-        <img src="./Dishicon.svg" alt="dish" />
+        <img src="./dishicon.svg" alt="dish" />
       </a>
     </div>
   );

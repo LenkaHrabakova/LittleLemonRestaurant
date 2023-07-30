@@ -19,8 +19,8 @@ export function CallToAction({
 }) {
   return (
     <div className="jumbotron">
-      <h1>{title}</h1>
-      <h2>{location}</h2>
+      <h1 className="jumbotron-title">{title}</h1>
+      <h2 className="jumbotron-subtitle">{location}</h2>
       <div className="jumbotron-info">
         <div className="jumbotron-text">
           <p>{text}</p>
