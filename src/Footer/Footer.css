@@ -34,6 +34,10 @@ footer {
   display: flex;
 }
 
+.footer-address li {
+  margin-top: 8px;
+}
+
 .footer-address a {
   text-decoration: none;
   color: white;
@@ -65,10 +69,12 @@ footer {
 
   .footer-social {
     flex-direction: column;
-    & img {
-      width: 28px;
-      height: 28px;
-    }
+    justify-content: space-around;
+  }
+
+  .footer-social img {
+    width: 28px;
+    height: 28px;
   }
 
   .footer-social img {
