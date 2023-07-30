@@ -9,8 +9,8 @@ footer {
 }
 
 .footer-logo img {
-  aspect-ratio: 2/3;
   width: 40px;
+  aspect-ratio: 0.59;
 }
 
 .footer-info {
@@ -32,6 +32,11 @@ footer {
   flex-grow: 1;
   flex-direction: column;
   display: flex;
+}
+
+.footer-address a {
+  text-decoration: none;
+  color: white;
 }
 
 .footer-social {
