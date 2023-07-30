@@ -1,8 +1,8 @@
-import { Button } from "../Button/Button";
-import { CallToAction } from "../CallToAction/CallToAction";
-import { FoodCard, FoodCards } from "../FoodCard/FoodCard";
-import { Main } from "../Main/Main";
-import { Specials } from "../Specials/Specials";
+import { Button } from "../../Button/Button";
+import { CallToAction } from "../../CallToAction/CallToAction";
+import { FoodCard, FoodCards } from "../../FoodCard/FoodCard";
+import { Main } from "../../Main/Main";
+import { Specials } from "../../Specials/Specials";
 
 export function Homepage() {
   return (

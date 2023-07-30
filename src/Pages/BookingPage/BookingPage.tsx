@@ -1,9 +1,9 @@
 import "./BookingPage.css";
 
-import { BookingForm } from "../BookingForm/BookingForm";
-import { AvailableTime } from "../AvailableTime";
-import { UpdateAvailableTimes } from "../updateTimes";
-import { Main } from "../Main/Main";
+import { BookingForm } from "../../BookingForm/BookingForm";
+import { AvailableTime } from "../../AvailableTime";
+import { UpdateAvailableTimes } from "../../updateTimes";
+import { Main } from "../../Main/Main";
 
 export function BookingPage({
   availableTimes,
