@@ -36,7 +36,8 @@
   }
 
   .navigation-toggle {
-    display: inline-block;
+    display: flex;
+    align-items: center;
   }
 
   .navigation.navigation-closed {
@@ -52,5 +53,37 @@
   .navigation-list {
     flex-direction: column;
     align-items: flex-end;
+    background-color: #edefee;
+    height: 30%;
+    width: calc(100% - 16px);
+    position: fixed;
+    top: 56px;
+    right: 0;
+    z-index: 1;
+    padding-left: 0;
+    margin-right: 8px;
+    margin-top: 0;
+  }
+
+  .navigation-item {
+    width: 100%;
+    text-align: center;
+    padding: 4px;
+    /* padding-top: 8px; */
+  }
+
+  .navigation-item a {
+    margin-left: 0;
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    padding-right: 16px;
+  }
+
+  .navigation-item a:hover {
+    background-color: #f8e16d;
+    border-radius: 8px;
+    color: black;
   }
 }

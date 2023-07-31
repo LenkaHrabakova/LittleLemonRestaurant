@@ -10,4 +10,5 @@ header img {
   margin-left: 16px;
   margin-right: auto;
   height: 50px;
+  z-index: 2;
 }
