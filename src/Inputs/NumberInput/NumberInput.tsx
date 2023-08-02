@@ -1,5 +1,5 @@
-import { ChangeEventHandler } from "react";
-import "../InputStyles.css";
+import { ChangeEventHandler } from 'react';
+import '../InputStyles.css';
 
 export function NumberInput({
   label,

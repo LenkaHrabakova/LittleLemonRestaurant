@@ -1,9 +1,9 @@
-import "./BookingPage.css";
+import './BookingPage.css';
 
-import { BookingForm } from "../../BookingForm/BookingForm";
-import { AvailableTime } from "../../AvailableTime";
-import { UpdateAvailableTimes } from "../../updateTimes";
-import { Main } from "../../Main/Main";
+import { BookingForm } from '../../BookingForm/BookingForm';
+import { AvailableTime } from '../../AvailableTime';
+import { UpdateAvailableTimes } from '../../updateTimes';
+import { Main } from '../../Main/Main';
 
 export function BookingPage({
   availableTimes,
@@ -15,10 +15,7 @@ export function BookingPage({
   return (
     <Main>
       <h1 className="booking-page-title">Booking Form</h1>
-      <BookingForm
-        availableTimes={availableTimes}
-        updateAvailableTimes={updateAvailableTimes}
-      />
+      <BookingForm availableTimes={availableTimes} updateAvailableTimes={updateAvailableTimes} />
     </Main>
   );
 }

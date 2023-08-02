@@ -1,7 +1,7 @@
-import { ChangeEventHandler } from "react";
-import "../InputStyles.css";
+import { ChangeEventHandler } from 'react';
+import '../InputStyles.css';
 
-export type TextInputType = "text" | "email" | "tel";
+export type TextInputType = 'text' | 'email' | 'tel';
 
 export function TextInput({
   label,

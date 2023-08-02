@@ -1,6 +1,6 @@
-import "./CallToAction.css";
+import './CallToAction.css';
 
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
 
 export function CallToAction({
   title,

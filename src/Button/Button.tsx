@@ -1,7 +1,7 @@
-import { MouseEventHandler } from "react";
-import "./Button.css";
+import { MouseEventHandler } from 'react';
+import './Button.css';
 
-export type ButtonType = "button" | "submit";
+export type ButtonType = 'button' | 'submit';
 
 export function Button({
   title,
@@ -21,12 +21,7 @@ export function Button({
   onClick?: MouseEventHandler;
 }) {
   return (
-    <button
-      disabled={disabled}
-      type={type}
-      className={className}
-      onClick={onClick}
-    >
+    <button disabled={disabled} type={type} className={className} onClick={onClick}>
       {imgSrc && <img src={imgSrc} alt={imgAlt} className="button-icon" />}
       {title}
     </button>

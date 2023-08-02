@@ -1,11 +1,11 @@
-import { useState } from "react";
-import { Button } from "../Button/Button";
-import "./Nav.css";
+import { useState } from 'react';
+import { Button } from '../Button/Button';
+import './Nav.css';
 
 export function Nav() {
   const [closed, setClosed] = useState(true);
   return (
-    <nav className={`navigation ${closed ? "navigation-closed" : ""}`}>
+    <nav className={`navigation ${closed ? 'navigation-closed' : ''}`}>
       <Button
         imgSrc="./bars-solid.svg"
         imgAlt="hamburger-ico"

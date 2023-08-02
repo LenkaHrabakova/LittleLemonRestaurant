@@ -1,12 +1,12 @@
-import { useState } from "react";
-import "./BookingForm.css";
-import { TextInput } from "../Inputs/TextInput/TextInput";
-import { DateInput } from "../Inputs/DateInput/DateInput";
-import { NumberInput } from "../Inputs/NumberInput/NumberInput";
-import { Select } from "../Inputs/Select/Select";
-import { AvailableTime } from "../AvailableTime";
-import { UpdateAvailableTimes } from "../updateTimes";
-import { Button } from "../Button/Button";
+import { useState } from 'react';
+import './BookingForm.css';
+import { TextInput } from '../Inputs/TextInput/TextInput';
+import { DateInput } from '../Inputs/DateInput/DateInput';
+import { NumberInput } from '../Inputs/NumberInput/NumberInput';
+import { Select } from '../Inputs/Select/Select';
+import { AvailableTime } from '../AvailableTime';
+import { UpdateAvailableTimes } from '../updateTimes';
+import { Button } from '../Button/Button';
 
 export function BookingForm({
   availableTimes,
@@ -15,23 +15,23 @@ export function BookingForm({
   availableTimes: AvailableTime[];
   updateAvailableTimes: UpdateAvailableTimes;
 }) {
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [email, setEmail] = useState("");
-  const [guests, setGuests] = useState("");
-  const [date, setDate] = useState("");
-  const [time, setTime] = useState("");
-  const [occasion, setOccasion] = useState("");
+  const [name, setName] = useState('');
+  const [phone, setPhone] = useState('');
+  const [email, setEmail] = useState('');
+  const [guests, setGuests] = useState('');
+  const [date, setDate] = useState('');
+  const [time, setTime] = useState('');
+  const [occasion, setOccasion] = useState('');
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setName("");
-    setEmail("");
-    setPhone("");
-    setGuests("");
-    setDate("");
-    setTime("");
-    setOccasion("");
+    setName('');
+    setEmail('');
+    setPhone('');
+    setGuests('');
+    setDate('');
+    setTime('');
+    setOccasion('');
   };
   return (
     <>
@@ -45,7 +45,7 @@ export function BookingForm({
             onChange={(e) => {
               setDate(e.target.value);
               updateAvailableTimes({
-                type: "date-changed",
+                type: 'date-changed',
                 value: e.target.value,
               });
             }}
@@ -71,8 +71,8 @@ export function BookingForm({
             id="occasion"
             value={occasion}
             selectOptions={[
-              { name: "Birthday", value: "birthday" },
-              { name: "Anniversary", value: "anniversary" },
+              { name: 'Birthday', value: 'birthday' },
+              { name: 'Anniversary', value: 'anniversary' },
             ]}
             onChange={(e) => setOccasion(e.target.value)}
           />

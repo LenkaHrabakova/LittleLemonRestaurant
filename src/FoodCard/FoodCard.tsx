@@ -1,5 +1,5 @@
-import "./FoodCard.css";
-import { ReactNode } from "react";
+import './FoodCard.css';
+import { ReactNode } from 'react';
 
 export function FoodCards({ children }: { children: ReactNode }) {
   return <div className="foodcards">{children}</div>;

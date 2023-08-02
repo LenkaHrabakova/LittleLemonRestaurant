@@ -1,5 +1,5 @@
-import { ChangeEventHandler } from "react";
-import "../InputStyles.css";
+import { ChangeEventHandler } from 'react';
+import '../InputStyles.css';
 
 export function Select({
   label,
@@ -19,13 +19,7 @@ export function Select({
   return (
     <div className="input">
       <label htmlFor={id}>{label}</label>
-      <select
-        className=""
-        id={id}
-        onChange={onChange}
-        value={value}
-        placeholder={placeholder}
-      >
+      <select className="" id={id} onChange={onChange} value={value} placeholder={placeholder}>
         <option />
         {selectOptions?.map((option, i) => (
           <option value={option.value} key={i}>
